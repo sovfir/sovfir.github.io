@@ -5,8 +5,7 @@ const screenDisplay = document.querySelector(".screen");
 let calculation = [];
 let clearCalc = [];
 
-function calculate(button) 
-{
+function calculate(button) {
   const value = button.textContent;
   if (value === "CLEAR") {
     calculation = [];
@@ -21,12 +20,10 @@ function calculate(button)
       calculation.push(value);
       clearCalc = calculation.join("");
       screenDisplay.textContent = clearCalc;
-    }
-    else
-    {
-        screenDisplay.textContent = ".";
-        calculation = [];
-        clearCalc = [];
+    } else {
+      screenDisplay.textContent = ".";
+      calculation = [];
+      clearCalc = [];
     }
   }
 }
