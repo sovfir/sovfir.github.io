@@ -14,7 +14,7 @@ function calculate(button)
     screenDisplay.textContent = ".";
   } else if (value === "=") {
     let answer = eval(clearCalc);
-    answer = answer.toFixed(3)
+    answer = answer.toFixed(1)
     screenDisplay.textContent = answer;
     clearCalc.push(answer);
   } else {
