@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Calculator</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <div class="calculator">
-        <div class="screen">.</div>
-        <br/>
-        <div class="buttons">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button>*</button>
-            <button>+</button>
-            <button>.</button>
-            <button>/</button>
-            <button>-</button>
-            <button id="equals">=</button>
-        </div>
-        <br/>
-        <button id="clear">CLEAR</button>
-
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <div id="window"></div>
+  </head>
+  <body>
     <script src="app.js"></script>
-</body>
+    <div id="uidesktop">
+      <div class="icon">
+        <a
+        href="https://github.com/sovfir"
+        title="My computer" target="_blank">
+        <img src="pic/computer.png">
+        <p>Мой компьютер</p>
+      </div>
+      <div class="icon">
+        <a
+        href="https://github.com/sovfir"
+        title="Recycle bin" target="_blank">
+        <img src="pic/bin.png">
+        <p>Корзина</p>
+      </div>
+      <div class="icon">
+        <a
+        href="https://firsov.itch.io/pokrov17"
+        title="Pokrov17" target="_blank">
+        <img src="pic/spider.png">
+        <p>Покров-17</p>
+      </div>
+      </div>
+    <div class="start-bar">
+      <a
+        href="https://github.com/sovfir"
+        title="Start Menu"
+        class="button start-button-wrapper js-start-button"
+        target="_blank"
+      >
+        <div class="start-button"></div>
+      </a>
+      <span class="start-bar-window"
+        ><div class="sprite gallery"></div>
+        Vaporware</span>
+      <span class="made-by">Moscow <span id="time"></span
+      >
+    </div>
+  </body>
 </html>

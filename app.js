@@ -1,33 +1,12 @@
-const buttons = document.querySelectorAll("button");
-
-const screenDisplay = document.querySelector(".screen");
-
-let calculation = [];
-let clearCalc = [];
-
-function calculate(button) {
-  const value = button.textContent;
-  if (value === "CLEAR") {
-    calculation = [];
-    clearCalc = [];
-    screenDisplay.textContent = ".";
-  } else if (value === "=") {
-    let answer = eval(clearCalc);
-    screenDisplay.textContent = answer;
-    clearCalc.push(answer);
-  } else {
-    if (clearCalc.length <= 9) {
-      calculation.push(value);
-      clearCalc = calculation.join("");
-      screenDisplay.textContent = clearCalc;
-    } else {
-      screenDisplay.textContent = ".";
-      calculation = [];
-      clearCalc = [];
-    }
-  }
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  
+  const formattedTime = `${hours}:${minutes}:${seconds}`;
+  document.getElementById("time").textContent = formattedTime;
 }
 
-buttons.forEach((button) =>
-  button.addEventListener("click", () => calculate(button))
-);
+// Обновляем время каждую секунду
+setInterval(updateTime, 1000);
