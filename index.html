@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code and Text</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/cv.css">
+    <link rel="stylesheet" href="./projects.css">
     <link rel="icon" href="pic/keyboard.png" type="image/x-icon">
     <link rel="pic" sizes="180x180" href="pic/keyboard.png">
-    <div id="window"></div>
-  </head>
-  <body>
-    <script src="app.js"></script>
-    <div id="paint">
-      <div class="winhed"><a>Vaporware</a></div>
-      <img src="pic/call.gif">
-      </div>
-    <div id="uidesktop">
-      <div class="icon">
-        <a
-        href="https://github.com/sovfir"
-        title="My computer" target="_blank">
-        <img src="pic/computer.png">
-        <p>Мой компьютер</p>
-      </div>
-      <div class="icon">
-        <a
-        href="https://github.com/sovfir"
-        title="Recycle bin" target="_blank">
-        <img src="pic/bin.png">
-        <p>Корзина</p>
-      </div>
-      <div class="icon">
-        <a
-        href="https://firsov.itch.io/pokrov17"
-        title="Pokrov17" target="_blank">
-        <img src="pic/spider.png">
-        <p>Покров-17</p>
-      </div>
-      </div>
-    <div class="start-bar">
-      <a
-        href="https://github.com/sovfir"
-        title="Start Menu"
-        class="button start-button-wrapper js-start-button"
-        target="_blank">
-        <div class="start-button"></div>
-      </a>
-      <span class="start-bar-window"
-        ><div class="sprite gallery"></div>
-        Vaporware</span>
-      <span class="made-by"><span id="time"></span
-      >
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100&family=Koulen&family=Libre+Barcode+128+Text&display=swap');
+      </style>
+    <title>Vaporware</title>
+</head>
+<body>
+
+<div class="draggable-window" id="myWindow">
+    <div class="window-header" id="header">
+      <p>About</p>
+        <span class="close-button" onclick="closeWindow()">×</span>
     </div>
-  </body>
+    <div class="window-content">
+        <!-- Ваш контент здесь -->
+        <div id="cv">
+          <div class="background-div">
+            <div id="ethdiv">
+              <img src="./pic/ethlogo.png">
+            </div>
+          </div>
+          <div id="cvtext">
+            <p id="cvname">Sergei Firsov</p>
+           <div id="punkdiv">  
+            <p id="punktext">WEBPUNK DEV</p>
+            </div>     
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="draggable-window" id="projects">
+  <div class="window-header" id="headerProjects">
+    <p>Projects</p>
+      <span class="close-button" onclick="closeProjectWindow()">×</span>
+  </div>
+  <div class="window-content">
+    <div class="foldericon">
+      <div class="icon" id="pokrov">
+        <img src="./pic/spider.png">
+        <a href="https://firsov.itch.io/pokrov17"><p>Покров17</p></a>
+      </div>
+  </div>
+
+  <div class="foldericon">
+    <div class="icon" id="deaf">
+      <img src="./pic/mute.png">
+      <a href="https://https://deaf.courses/"><p>Deaf Courses</p></a>
+    </div>
+</div>
+
+  </div>
+</div>
+
+<div id="uidesktop">
+    <div class="icon" id="mycomputer">
+      <img src="pic/computer.png">
+      <p>Мой компьютер</p>
+    </div>
+
+    <div class="icon" id="bin">
+      <img src="./pic/bin.png">
+      <p>Корзина</p>
+    </div>
+</div>
+
+<div class="start-bar">
+    <a
+      href="https://github.com/sovfir"
+      title="Start Menu"
+      class="button start-button-wrapper js-start-button"
+      target="_blank">
+      <div class="start-button"></div>
+    </a>
+    <span class="start-bar-window"
+      ><div class="sprite gallery"></div>
+      Vaporware</span>
+    <span class="made-by"><span id="time"></span
+    >
+  </div>
+<script src="script.js"></script>
+</body>
 </html>

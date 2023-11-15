@@ -1,0 +1,77 @@
+#cv {
+    display: inline-block;
+    padding-top: 0%;
+    width: 100%;
+    background-color: #202124;
+}
+
+#myWindow {
+    top: 3%;
+    left:8%;
+    width: 35%;
+    height:auto;
+    margin:0;
+    padding:0%;
+    
+}
+
+#cv img {
+    width:100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#cvtext {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца равной ширины */
+    gap: 10px; /* Добавляем немного отступа между блоками, если нужно */
+}
+
+
+#cvname {
+    
+    width:auto;
+    height:auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 350%;
+    padding:0;
+    padding-left: 0.3rem;
+    margin: 0;
+    color:azure;
+    align-self: center;
+}
+
+#cvdesk {
+    font-size: 150%;
+    font-family: 'Bebas Neue', sans-serif;
+    color:azure;
+    margin: 0;
+    padding:0;
+    line-height: 1; /* Устанавливаем высоту строки в 1, что является минимальным значением */
+}
+
+
+
+#punktext {
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    color:azure;
+    font-size:60px;
+    margin: 0;
+}
+
+
+#ethdiv {
+    background-color: #202124;
+    width:10%;
+    border-radius: 10px;
+}
+
+.background-div {
+    width: 100%; 
+    height: 300px; 
+    background-image: url('../pic/avatar.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;}

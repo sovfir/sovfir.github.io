@@ -1,0 +1,34 @@
+#projects {
+    top: 53%;
+    left:8%;
+    width: 35%;
+    height:auto;
+    margin:0;
+    padding:0%;
+    display: block;
+}
+
+.foldericon {
+    flex-direction: row; 
+    display: inline-block;
+    margin: 10px;
+    align-self: center;
+}
+
+.foldericon p {
+    flex-direction: row; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.foldericon img {
+    align-self: right;
+}
+
+.foldericon a {
+    text-decoration: none;
+    color: black;
+    image-rendering: 'pixelated';
+    text-align: center;
+}
