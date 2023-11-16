@@ -8,6 +8,15 @@
     display: block;
 }
 
+@media (max-width: 768px) {
+    #projects {
+      width: 50vw; /* 50% ширины экрана */
+      height: 50vh; /* 50% высоты экрана */
+      bottom: 25vh; /* Центрирование по вертикали */
+      left: 25vw; /* Центрирование по горизонтали */
+    }
+  }
+
 .foldericon {
     flex-direction: row; 
     display: inline-block;

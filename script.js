@@ -1,3 +1,4 @@
+
 function updateTime() {
     const now = new Date();
     const hours = now.getHours();
