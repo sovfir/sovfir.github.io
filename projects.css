@@ -1,7 +1,17 @@
 #projects {
   top: 53%;
-  left: 8%;
-  width: 35%;
+  left: 13%;
+  width: 40%;
+  height: auto;
+  margin: 0;
+  padding: 0%;
+  display: block;
+}
+
+#myWindow {
+  top: 3%;
+  left: 13%;
+  width: 40%;
   height: auto;
   margin: 0;
   padding: 0%;
@@ -12,8 +22,8 @@
   #projects {
     width: 100vw;
     height: 50vh; /* 50% высоты экрана */
-    bottom: 2vh; /* Центрирование по вертикали */
-    left: 0; /* Центрирование по горизонтали */
+    bottom: 2vh; 
+    left: 0; 
     margin: 0;
     padding: 0%;
     display: block;
@@ -21,21 +31,20 @@
 }
 
 .foldericon {
-  flex-direction: row;
-  display: inline-block;
   margin: 10px;
-  align-self: center;
+  display: inline-block; 
 }
 
 .foldericon p {
-  flex-direction: row;
+  margin: 2; 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  text-align: center; 
 }
 
 .foldericon img {
-  align-self: right;
+  margin-left: 7px; 
 }
 
 .foldericon a {

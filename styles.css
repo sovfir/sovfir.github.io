@@ -121,7 +121,7 @@ body,html {
     padding-bottom: 0%;
     user-select: none;
     display: inline-block;
-    width:97%;
+    width:97.5%;
 }
 
 .window-header p {
@@ -184,4 +184,5 @@ body,html {
 
 .icon img {
     align-self: center;
+    margin-left: 8px;
 }
